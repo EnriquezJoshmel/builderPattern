@@ -1,0 +1,31 @@
+package builderPattern;
+import java.util.*;
+
+public class UserApp{
+    public static void main(String[] args){
+
+        User myUser = new User.UserBuilder()
+                .firstName("Joshmel")
+                .lastName("Enriquez")
+                .email("enriquezjoshmel@gmail.com")
+                .address("#085 Area 5, Luzon Ave., Quezon City")
+                .age(22)
+                .phone("09684260337")
+                .build();
+
+                System.out.println("\nYou want to create an Account? \nFill up the Information needed below:");
+                System.out.println("\nLastname: " + myUser.firstName);
+                System.out.println("Firstname: " + myUser.lastName);
+                System.out.println("Email Address: " + myUser.email);
+                System.out.println("Your Location: " + myUser.address);
+                System.out.println("Age: " + myUser.age);
+                System.out.println("Phone Number: " + myUser.phone);
+
+
+
+    }
+
+
+
+
+}
